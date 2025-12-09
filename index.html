@@ -1,203 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #84a6e9;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Limalkavinesh I</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    .container {
+      width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 35% 65%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .left {
+      background: linear-gradient(180deg, #1b1f3b, #32386a);
+      color: #fff;
+      padding: 35px;
+    }
+    .photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 0 auto 20px auto;
+      background-size: cover;
+      background-position: center;
+    }
+    h2, h3 {
+      margin-bottom: 10px;
+      letter-spacing: .5px;
+    }
+    .left h2 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .section-title {
+      margin: 25px 0 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 4px;
+    }
+    .left p, .right p, ul li {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .right {
+      padding: 35px;
+    }
+    .right h1 {
+      margin-top: 0;
+      font-size: 30px;
+      color: #1b1f3b;
+    }
+    .right .role {
+      font-size: 16px;
+      font-weight: 500;
+      color: #32386a;
+      margin-bottom: 20px;
+    }
+    ul { margin: 0; padding-left: 20px; }
 
-        header {
-            background-color: #941919;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
-        }
-
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .section-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-
-        .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
-        }
-
-        .download-button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
+    /* Resume Download Button */
+    .download-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      background: #1b1f3b;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      border-radius: 6px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    .download-btn:hover {
+      background: #32386a;
+    }
+    .section-title a{
+        color: white;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="f11007a84ed3592b43bb9ed383dc26c3.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h1>LIMALKAVINESH I</h1>
-            <p>SOFTWARE DEVELOPER</p>
-        </div>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-           
-        </ul>
-    </nav>
+<div class="container">
 
-    <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I'm a <b>software development</b> expert who is passionate about creating dynamic and user-friendly websites. 
-                I'm driven by the desire to craft high-performance web applications that enhance user experience and provide
-                 seamless digital solutions. With over 7 years of experience in the field, I'm dedicated to staying up to date 
-                 with the latest trends and innovations in the 
-                 web development landscape. I'm also committed to helping others learn more about web technologies, 
-                 best practices, and how to build secure and scalable websites.</p>
+  <!-- LEFT COLUMN -->
+  <div class="left">
+    <div class="photo" style="background-image: url('22308.jpg');"></div>
+    <h2>Limalkavinesh . I</h2>
 
-        </div>
-    </section>
+    <div class="section-title">Contact</div>
+    <p>📞 7904431650</p>
+    <p>📧 limalkavinesh@gmail.com</p>
+    <p>📍 Veeriyampalayam, Coimbatore - 641048</p>
+    <p>🔗 <br>
+      LinkedIn:<a href="linkedin.com/in/limalkavinesh-i">linkedin.com/in/limalkavinesh-i</a> <br>
+      GitHub: <a href="github.com/Smilykiller">github.com/Smilykiller </a>
+    </p>
 
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <p>chandra matriculation higher secondary school -10th
-                shri kknaidu                                 -11th &12th
-                 karhir college of arts and science </p>
-            
-            
-        </div>
-    </section>
+    <div class="section-title">Technical Skills</div>
+    <p><strong>Frontend:</strong> HTML, CSS, JavaScript, React, Bootstrap, Tailwind CSS</p>
+    <p><strong>Programming:</strong> C, C++, Java, Python, JavaScript</p>
+    <p><strong>Database:</strong> RDBMS / SQL</p>
+    <p><strong>Soft Tools:</strong> MS Office, PowerPoint, Canva, Photoshop, Lightroom</p>
+    <p><strong>Tools:</strong> Git, GitHub, VS Code</p>
+    <p><strong>OS:</strong> Windows, Kali Linux, Ubuntu, Feren Linux</p>
 
-    <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>html</li>
-                <li>python</li>
-                <li>Cloud Computing</li>
-                <li>c</li>
-                <li>c++</li>
-                <li>bash</li>
-                <li>java</li>
-                <li>c++</li>
-                <li>Java script</li>
-            </ul>
-        </div>
-    </section>
+    <div class="section-title">Hobbies</div>
+    <ul>
+      <li>Photography & Videography</li>
+      <li>Video & Photo Editing</li>
+      <li>Research on Software</li>
+      <li>Working with Hardware</li>
+      <li>Project Development</li>
+    </ul>
+  </div>
 
-    <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">E Cart website</a></li>
-                <li><a href="#">Cloud Security IBM</a></li>
-                <li><a href="#">IBM chatbot</a></li>
-                <li><a href="#">College Portal</a></li> 
-                <!-- Add more project links here -->
-            </ul>
-        </div>
-    </section>
+  <!-- RIGHT COLUMN -->
+  <div class="right">
+    <h1>Limalkavinesh . I</h1>
+    <div class="role">Frontend Developer / Software Developer</div>
 
-    <section id="resume">
-    
-        <div class="section-content">
-            <center>
-            <h2>Resume</h2>
-            <a href="resume.pdf" target="_blank" class="download-button">Download CV</a>
-        </center>
-        </div>
-        
-    </section>
+    <h3>Summary</h3>
+    <p>
+      Highly motivated Frontend & Software Developer with strong skills in modern 
+      web development, UI design, and creative implementation. Experienced in building 
+      responsive projects and passionate about new technologies, cybersecurity, and digital creation.
+    </p>
 
-    <footer>
-        <p>&copy; 2025 LIMALKAVINESH</p>
-    </footer>
+    <h3>Education</h3>
+    <p><strong>SSLC</strong><br>Chandra Matriculation Higher Secondary School — Pass</p>
+    <p><strong>HSC</strong><br>Shri K.K. Naidu Memorial School — 72%</p>
+    <p><strong>B.Sc Computer Science</strong><br>Kathir College of Arts and Science</p>
 
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
+    <h3>Projects</h3>
+    <ul>
+      <li><strong>Photographer Portfolio Website (In Process):</strong> Modern gallery website with booking, dynamic layouts, and responsive UI.</li>
+      <li><strong>Smart Campus Attendance System (In Process):</strong> GPS-based attendance verification with React UI, secure APIs, and biometric mobile bridge.</li>
+      <li><strong>Makeup Artist Portfolio Website:</strong> Full service website with gallery, dropdown pages, and themed gradient UI.</li>
+    </ul>
 
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
+    <h3>Leadership & Volunteer Experience</h3>
+    <ul>
+      <li>Volunteer in all college events & functions</li>
+      <li>Head Coordinator for Farewell, Freshers, and Department events (2 years)</li>
+      <li>Joint Treasurer (1st year)</li>
+      <li>Main Speaker for students addressing staff panels</li>
+      <li>Class Representative (2 years)</li>
+    </ul>
 
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <h3>Certifications & Achievements</h3>
+    <ul>
+      <li>Debugging Competition – 1st Prize</li>
+      <li>Asian Book of Records – Technical Team (249 Hours)</li>
+      <li>Paper Presentation – 3rd Prize (NextGen Ideas)</li>
+      <li>Paper Presentation – 2nd Prize (KIT College)</li>
+      <li>Workshop – UNLOGGING THE WEBSITE (2024)</li>
+      <li>Bentley Certificates – CAD & Structural Modeling</li>
+      <li>Ethical Hacking Workshops (Cyberium, Nikistian)</li>
+      <li>Cybersecurity & Blockchain Workshops – NoviTech</li>
+      <li>Agile Fundamentals – Perfect Plan B</li>
+    </ul>
+
+    <h3>Declaration</h3>
+    <p>
+      I hereby declare that all the information provided above is true and correct to the best of my knowledge and belief.
+    </p>
+    <p><strong>Place:</strong> Coimbatore<br><strong></p>
+
+    <!-- RESUME DOWNLOAD BUTTON -->
+    <a class="download-btn" href="limal_resume.pdf" download>📄 Download Resume</a>
+
+  </div>
+
+</div>
+
 </body>
 </html>
